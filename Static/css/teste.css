@@ -1,0 +1,165 @@
+body {
+  background-color: #f5f5f5; /* Cor de fundo suave */
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  height: 120px; /* Ajuste conforme necessário */
+  padding: 20px 0;
+  text-align: center;
+  /* Aplicando a animação ao texto dentro do cabeçalho */
+  animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.logo {
+    width: 200px; /* Ajuste a largura conforme necessário */
+    height: 100px; /* Ajuste a altura conforme necessário */
+    background-image: url('/static/images/logo.jpeg'); /* Certifique-se de que o caminho está correto */
+    background-size: cover; /* Faz com que a imagem preencha todo o espaço disponível, podendo ser cortada */
+    background-position: center; /* Centraliza a imagem no espaço disponível */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para os botões de redes sociais */
+.social-buttons {
+  margin-top: 20px;
+}
+
+.social-buttons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+.social-buttons a i {
+  font-size: 24px;
+}
+
+/* Cores personalizadas para os ícones */
+.social-buttons a i.fa-whatsapp {
+  color: #25d366; /* Verde do WhatsApp */
+}
+
+.social-buttons a i.fa-telegram {
+  color: #0088cc; /* Azul do Telegram */
+}
+
+.social-buttons a i.fa-instagram {
+  color: #e4405f; /* Rosa do Instagram */
+}
+
+}
+
+main {
+  padding: 20px;
+}
+
+section h2 {
+  /* Correção: adicionando a animação aos títulos das seções */
+  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Definições das animações */
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes bg-pan-left {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .nav-list li {
+        margin-bottom: 10px;
+    }
+}
+
+
